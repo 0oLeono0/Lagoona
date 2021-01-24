@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "MullerBold";
+  src: url("/fonts/MullerBold.woff") format("woff"),
+  url("/fonts/MullerBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MullerLight";
+  src: url("/fonts/MullerLight.woff") format("woff"),
+  url("/fonts/MullerLight.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  src: url("/fonts/MullerMedium.woff") format("woff"),
+  url("/fonts/MullerMedium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  src: url("/fonts/MullerRegular.woff") format("woff"),
+  url("/fonts/MullerRegular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
 * { 
   box-sizing: border-box;
 }
@@ -17,13 +49,14 @@ img {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: MullerRegular, sans-serif;
 }
 
 .container {
   width: 1168px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .section {
@@ -31,8 +64,12 @@ html {
 }
 
 .section-header {
+  font-family: MullerRegular;
+  font-size: 40px;
+  line-height: 32px;
   margin-left: 45px;
   margin-bottom: 30px;
+  color: #333;
 }
 
 /* Header */
@@ -53,6 +90,24 @@ html {
 
 .phone {
   margin-right: auto;
+  font-family: MullerBold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #666666;
+}
+
+.account-arrow {
+  background-image: url("/img/PNG/keyboard_tab.png");
+  background-size: contain;
+  width: 21px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.account {
+  font-size: 16px;
+  list-style: 32px;
+  color: #cc9933;
 }
 
 .header-nav {
@@ -64,6 +119,12 @@ html {
 .header-list {
   display: flex;
   margin-right: auto;
+}
+
+.header-item {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
 }
 
 .header-item:not(:last-child) {
@@ -102,6 +163,8 @@ html {
   cursor: pointer;
 }
 
+/* Reservation */
+
 .reservation {
   margin-right: auto;
 }
@@ -112,17 +175,83 @@ html {
 }
 
 .reservation-input {
-  padding-right: 500px;
+  width: 500px;
+  height: 70px;
+  border: none;
+  font-family: MullerRegular;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999;
+  margin-bottom: 25px;
+}
+
+.reservation-btn {
+  margin-right: 30px;
+  padding: 27px 30px;
+  border: none;
+  border-radius: 12px;
+  background-color: #cc9933;
+  font-family: MullerBold;
+  font-size: 16px;
+  line-height: 2;
+  color: #ffffff;
 }
 
 .reservation-par {
   display: inline;
+  font-family: MullerRegular;
+  font-size: 16px;
+  line-height: 2;
+  color: #999999;
+}
+
+.reservation-available {
+  color: #cc9933;
+  font-weight: normal;
+}
+
+/* Special Offer */
+
+.special-offer-img {
+  width: 595px;
+  height: 540px;
+  background-image: url(/img/JPG/22.jpg);
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.Special-Offer-offer-name {
+  display: inline-block;
+  margin: 40px;
+  font-family: MullerBold;
+  font-size: 66px;
+  line-height: 0.88;
+  color: #ffffff;
 }
 
 .Special-Offer-price {
-  display: inline;
+  margin: 0 40px 35px;
+  display: inline-block;
+  opacity: 0.49;
+  font-size: 35px;
+  line-height: 0.91;
+  color: rgba(255, 255, 255, 0.49);
 }
 
+.Special-Offer-more {
+  font-size: 16px;
+  line-height: 2;
+  color: #ffcc66;
+}
+
+/* About Us */
+.About-Us-text {
+  font-size: 16px;
+  line-height: 2;
+  color: #666666;
+}
+
+/* Services */
 .Services {
   display: flex;
   flex-wrap: wrap;
@@ -130,8 +259,30 @@ html {
 
 .service {
   flex: 1 1 50%;
-  padding-right: 25px;
+  padding: 12.5px;
 }
+
+.service-img {
+  margin-bottom: 35px;
+}
+
+.service-link {
+  margin-left: 45px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #cc9933;
+}
+
+.service-text {
+  margin-bottom: 40px;
+  margin-left: 45px;
+  font-size: 16px;
+  line-height: 2;
+  color: #333333;
+}
+
+/* Benefits */
 
 .Benefits-list {
   display: flex;
@@ -139,18 +290,23 @@ html {
 }
 
 .Benefits-item {
+  min-width: 270px;
+  min-height: 270px;
   margin-left: 20px;
-  flex: 1 1 20%;
-  max-width: 275px;
+  flex: 0 0 15%;
 }
+
+.Benefits-text {
+  font-size: 16px;
+  line-height: 2;
+  color: #333333;
+}
+
+/* Placing */
 
 .Placing-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.Placing-about {
-  margin-bottom: 20px;
 }
 
 .Placing-item {
@@ -161,10 +317,36 @@ html {
   margin-bottom: 25px;
 }
 
+.Placing-about {
+  margin-bottom: 20px;
+}
+
 .Placing-text {
-  display: inline-block;
+  transform: translateY(-16px);
   margin: 0;
+  display: inline-block;
+  font-family: MullerRegular;
+  font-size: 16px;
   line-height: 2;
+  color: #969696;
+}
+
+.price {
+  font-family: MullerBold;
+  font-size: 22px;
+  color: #333;
+}
+
+.placing-name {
+  color: #333;
+}
+
+.placing-link-btn {
+  min-width: 100px;
+  min-height: 41px;
+  border-radius: 12px;
+  border: solid 1px #cc9933;
+  background: none;
 }
 
 .Placing-img {
@@ -173,6 +355,18 @@ html {
 
 .placing-link {
   background-image: url(/img/JPG/41.jpg);
+  display: table-cell;
+  vertical-align: bottom;
+  width: 373px;
+  height: 441px;
+}
+
+.more-link {
+  display: inline-block;
+  margin: 45px;
+  font-size: 22px;
+  line-height: 1.45;
+  color: #ffffff;
 }
 
 .star {

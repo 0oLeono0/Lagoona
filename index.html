@@ -12,8 +12,9 @@
     <div class="container">
 			<div class="header-header">
 				<img src="/img/PNG/Logo.png" alt="Lagoona сеть отелей" class="logo">
-    		<a href="tel:+74953225448" class="phone">+7 495 322 54 48</a>
-    		<a href="" class="account">личный кабинет</a>
+				<a href="tel:+74953225448" class="phone">+7 495 322 54 48</a>
+				<span class="account-arrow"></span>
+    		<a href="" class="account">Личный кабинет</a>
 			</div>
     	<div class="header-nav">
 				<ul class="header-list">
@@ -46,14 +47,15 @@
 						<li class="reservation-item"><input type="text" placeholder="Количество гостей" class="reservation-input"></li>
 					</ul>
 					<button class="reservation-btn">Найти номер</button>
-					<p class="reservation-par">9 756 предложений доступно</p>
+					<p class="reservation-par"><strong class="reservation-available">9 756</strong> предложений доступно</p>
 				</div>
 				<div class="Special-Offer">
 					<h2 class="section-header">Спецпредложение</h2>
-					<img src="/img/JPG/22" alt="Номера категории люкс" class="Special-Offer-img">
-					<strong class="Special-Offer-offer-name">Номера категории люкс</strong> <br>
-					<p class="Special-Offer-price">от 5 000 р</p>
-					<a href="" class="Special-Offer-more">Подробнее</a>
+					<div class="special-offer-img">
+						<strong class="Special-Offer-offer-name">Номера <br> категории <br> люкс</strong> <br>
+						<p class="Special-Offer-price">от 5 000 р</p>
+						<a href="" class="Special-Offer-more">Подробнее</a>
+					</div>
 				</div>
 			</div>
 			<div class="section About-Us">
@@ -87,35 +89,35 @@
 			<div class="section Benefits">
 				<ul class="Benefits-list">
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/bathtub.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/bathtub.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
 					</li>
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/hanger.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/hanger.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
 					</li>
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/heating.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/heating.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Таким образом реализация плановых заданий играет важную роль для понимания</p>
 					</li>
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/hotel-key.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/hotel-key.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Повседневная практика показывает, что сложившаяся структура организации</p>
 					</li>
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/parking.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/parking.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
 					</li>
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/reception.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/reception.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса </p>
 					</li>
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/security-box.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/security-box.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
 					</li>
 					<li class="Benefits-item">
-						<img aria-label="presentation" src="/img/SVG/swimming-pool.svg" alt="" class="Benefits-icon">
+						<img aria-label="presentation" src="/img/PNG/swimming-pool.png" alt="" class="Benefits-icon">
 						<p class="Benefits-text">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
 					</li>
 				</ul>
@@ -126,7 +128,7 @@
 					<li class="Placing-item">
 						<img src="/img/JPG/23.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">4 698 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">4 698 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona española</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -137,12 +139,12 @@
 								<img src="/img/PNG/empty-star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
 					<li class="Placing-item">
 						<img src="/img/JPG/24.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">5 148 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">5 148 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona son típicas</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -153,12 +155,12 @@
 								<img src="/img/PNG/empty-star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
 					<li class="Placing-item">
 						<img src="/img/JPG/26.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">6 254 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">6 254 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona de la guerra</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -169,12 +171,12 @@
 								<img src="/img/PNG/star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
 					<li class="Placing-item">
 						<img src="/img/JPG/29.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">6 320 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">6 320 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona mentira piadosa</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -185,12 +187,12 @@
 								<img src="/img/PNG/star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
 					<li class="Placing-item">
 						<img src="/img/JPG/30.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">6 457 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">6 457 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona empujar la creatividad</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -201,12 +203,12 @@
 								<img src="/img/PNG/empty-star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
 					<li class="Placing-item">
 						<img src="/img/JPG/31.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">6 490 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">6 490 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona el retorno</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -217,12 +219,12 @@
 								<img src="/img/PNG/empty-star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
 					<li class="Placing-item">
 						<img src="/img/JPG/27.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">6 505 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">6 505 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona enfermo terminó</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -233,12 +235,12 @@
 								<img src="/img/PNG/star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
 					<li class="Placing-item">
 						<img src="/img/JPG/32.jpg" alt="" class="Placing-img">
 						<div class="Placing-about">
-							<p class="Placing-text">от <strong class="price">6 824 р</strong> / <strong>ночь<br>
+							<p class="Placing-text">от <strong class="price">6 824 р</strong> / <strong class="placing-name">ночь<br>
 								Lagoona suerte siguió siempre</strong> <br>
 								Барселона, Испания</p>
 							<span class="star">
@@ -249,10 +251,12 @@
 								<img src="/img/PNG/empty-star.png" alt="" class="Placing-star">
 							</span>
 						</div>
-						<a href=""><button>Номера</button></a>
+						<a href=""><button class="placing-link-btn">Номера</button></a>
 					</li>
-					<li class="Placing-item placing-link">
-						<a href="" alt="" class="more-link">Посмотреть все варианты</a>
+					<li class="Placing-item">
+						<div class="placing-link">
+							<a href="" alt="" class="more-link">Посмотреть все варианты</a>
+						</div>
 					</li>
 				</ul>
 			</div>
