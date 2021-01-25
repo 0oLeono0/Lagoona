@@ -57,6 +57,8 @@ html {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .section {
@@ -172,6 +174,7 @@ html {
 
 .reservation-offer {
   display: flex;
+  margin: auto;
 }
 
 .reservation-input {
@@ -183,9 +186,11 @@ html {
   line-height: 32px;
   color: #999;
   margin-bottom: 25px;
+  display: block;
 }
 
 .reservation-btn {
+  display: inline-block;
   margin-right: 30px;
   padding: 27px 30px;
   border: none;
@@ -249,17 +254,21 @@ html {
   font-size: 16px;
   line-height: 2;
   color: #666666;
+  margin: auto;
 }
 
 /* Services */
 .Services {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  align-content: center; 
+  justify-content: space-between;
 }
 
 .service {
-  flex: 1 1 50%;
-  padding: 12.5px;
+  flex: 0 0 50%;
+  max-width: 570px;
 }
 
 .service-img {
@@ -286,13 +295,15 @@ html {
 
 .Benefits-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  align-items: center;
+  align-content: center; 
+  justify-content: space-between;
 }
 
 .Benefits-item {
-  min-width: 270px;
-  min-height: 270px;
-  margin-left: 20px;
+  min-width: 275px;
+  min-height: 275px;
   flex: 0 0 15%;
 }
 
@@ -306,13 +317,15 @@ html {
 
 .Placing-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  align-items: center;
+  align-content: center; 
+  justify-content: space-between;
 }
 
 .Placing-item {
   max-width: 370px;
-  margin-left: 25px;
-  flex: 1 1 25%;
+  flex: 0 0 33.33%;
   min-height: 440px;
   margin-bottom: 25px;
 }
@@ -372,9 +385,3 @@ html {
 .star {
   vertical-align: top;
 }
-
-
-
-
-
-
