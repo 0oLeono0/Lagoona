@@ -39,15 +39,15 @@
 			<div class="section reservation-offer">
 				<div class="reservation">
 					<h2 class="section-header">Быстрая бронь</h2>
-					<form action="">
-						<input type="text" placeholder="Город" class="reservation-input">
-						<input type="text" placeholder="Категория Номера" class="reservation-input">
-						<input type="text" placeholder="Дата заселения" class="reservation-input">
-						<input type="text" placeholder="Количество ночей" class="reservation-input">
-						<input type="text" placeholder="Количество гостей" class="reservation-input">
+					<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+						<input required type="text" name="town" placeholder="Город" class="reservation-input">
+						<input type="text" name="nomber" placeholder="Категория Номера" class="reservation-input">
+						<input type="date" name="date" placeholder="Дата заселения" class="reservation-input">
+						<input type="number" name="night" placeholder="Количество ночей" class="reservation-input">
+						<input type="number" name="people" placeholder="Количество гостей" class="reservation-input">
 						<button class="reservation-btn">Найти номер</button>
+						<p class="reservation-par"><strong class="reservation-available">9 756</strong> предложений доступно</p>
 					</form>
-					<p class="reservation-par"><strong class="reservation-available">9 756</strong> предложений доступно</p>
 				</div>
 				<div class="Special-Offer">
 					<h2 class="section-header">Спецпредложение</h2>
@@ -122,8 +122,8 @@
 					</li>
 				</ul>
 			</div>
-			<h2 class="section-header">Размещение</h2>
 			<div class="section Placing">
+			<h2 class="section-header">Размещение</h2>
 				<ul class="Placing-list">
 					<li class="Placing-item">
 						<img src="/img/JPG/23.jpg" alt="" class="Placing-img">
@@ -260,7 +260,70 @@
 					</li>
 				</ul>
 			</div>
+			<div class="contacts-write">
+				<div class="contacts">
+					<h2 class="section-header">Контакты</h2>
+					<div class="contacts-section">
+						<strong class="contacts-section-header">Адрес</strong>
+						<p class="contacts-section-text">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+					</div>
+					<div class="contacts-section">
+						<strong class="contacts-section-header">Телефоны</strong>
+						<p class="contacts-section-text"><a href="tel:+74995356434" class="contacts-phone">+7 (499) 535-64-34</a><br>
+							<a href="tel:+74950050544" class="contacts-phone">+7 (495) 005-05-44</a></p>
+					</div>
+					<div class="contacts-section">
+						<strong class="contacts-section-header">E-mail</strong>
+						<p class="contacts-section-text mail-text"><a href="mailto:lg.oona@mail.ru" class="contacts-mail">lg.oona@mail.ru</a>
+							по вопросам-бронирования<br><a href="mailto:hotels.ln@mail.ru" class="contacts-mail">hotels.ln@mail.ru</a>
+							по вопросам сотруднечества</p>
+					</div>
+					<div class="contacts-section">
+						<strong class="contacts-section-header">График</strong>
+						<p class="contacts-section-text">Понедельник - пятница, <br>c 10:00 до 19:00</p>
+					</div>
+					<button class="contacts-btn">Построить маршрут</button>
+				</div>
+				<div class="write">
+					<h2 class="section-header">Напишите нам</h2>
+					<form action="https://jsonplaceholder.typicode.com/posts" autocomplete class="write-form" method="POST">
+						<input name="name" type="text" placeholder="Имя" class="write-form-input">
+						<input name="phone" type="tel" required placeholder="+7" class="write-form-input">
+						<textarea name="message" cols="30" rows="10" placeholder="Сообщение..." class="write-form-textarea"></textarea>
+						<button class="write-form-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</main>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-info">
+				<div class="info">
+					<p class="corp">2012-2020 Управляющая компания<br>Объединенной сети "Лагуна Хотелс"</p>
+					<p class="info-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+					<a href="" class="polit">Политика конфиденциальности</a>
+				</div>
+				<div class="info-contacts">
+					<p class="adres">11710, улица Юности, дом 5 строение 4, офис 2</p>
+					<div class="info-phones">
+						<a href="tel:+74995356434" class="info-contacts-phone">+7 (499) 535-64-34</a>
+						<a href="tel:+74950050544" class="info-contacts-phone">+7 (495) 005-05-44</a>
+					</div>
+					<a href="mailto:lg.oona@mail.ru" class="info-contacts-mail">lg.oona@mail.ru</a>
+					<a href="mailto:hotels.ln@mail.ru" class="info-contacts-mail">hotels.ln@mail.ru</a>
+				</div>
+			<ul class="links-list">
+				<li class="item trip"><a href=""></a></li>
+				<li class="item twiter"><a href=""></a></li>
+				<li class="item facebook"><a href=""></a></li>
+				<li class="item vk"><a href=""></a></li>
+				<li class="item google"><a href=""></a></li>
+			</ul>
+			<img class="footer-img" src="/img/PNG/Слой 27 копия.png" alt="">
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
