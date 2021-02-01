@@ -1,29 +1,29 @@
 @font-face {
-  font-family: "MullerBold";
+  font-family: "Muller";
   src: url("/fonts/MullerBold.woff") format("woff"),
   url("/fonts/MullerBold.woff2") format("woff2");
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @font-face {
-  font-family: "MullerLight";
+  font-family: "Muller";
   src: url("/fonts/MullerLight.woff") format("woff"),
   url("/fonts/MullerLight.woff2") format("woff2");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "MullerMedium";
+  font-family: "Muller";
   src: url("/fonts/MullerMedium.woff") format("woff"),
   url("/fonts/MullerMedium.woff2") format("woff2");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "MullerRegular";
+  font-family: "Muller";
   src: url("/fonts/MullerRegular.woff") format("woff"),
   url("/fonts/MullerRegular.woff2") format("woff2");
   font-style: normal;
@@ -74,7 +74,8 @@ img {
 }
 
 html {
-  font-family: MullerRegular, sans-serif;
+  font-family: Muller, sans-serif;
+  font-weight: normal;
 }
 
 .container {
@@ -91,7 +92,7 @@ html {
 }
 
 .section-header {
-  font-family: MullerRegular;
+  font-weight: normal;
   font-size: 40px;
   line-height: 32px;
   margin-left: 45px;
@@ -117,7 +118,7 @@ html {
 
 .phone {
   margin-right: auto;
-  font-family: MullerBold;
+  font-weight: bold;
   font-size: 22px;
   line-height: 32px;
   color: #666666;
@@ -206,7 +207,7 @@ html {
   width: 500px;
   height: 70px;
   border: none;
-  font-family: MullerRegular;
+  font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   color: var(--text);
@@ -221,7 +222,7 @@ html {
   border: none;
   border-radius: 12px;
   background-color: var(--button);
-  font-family: MullerBold;
+  font-weight: bold;
   font-size: 16px;
   line-height: 2;
   color: #fff;
@@ -229,7 +230,7 @@ html {
 
 .reservation-par {
   display: inline;
-  font-family: MullerRegular;
+  font-weight: normal;
   font-size: 16px;
   line-height: 2;
   color: var(--text);
@@ -253,7 +254,7 @@ html {
 .Special-Offer-offer-name {
   display: inline-block;
   margin: 40px;
-  font-family: MullerBold;
+  font-weight: bold;
   font-size: 66px;
   line-height: 0.88;
   color: #ffffff;
@@ -366,14 +367,14 @@ html {
   transform: translateY(-16px);
   margin: 0;
   display: inline-block;
-  font-family: MullerRegular;
+  font-weight: normal;
   font-size: 16px;
   line-height: 2;
   color: #969696;
 }
 
 .price {
-  font-family: MullerBold;
+  font-weight: bold;
   font-size: 22px;
   color: var(--header);
 }
@@ -394,16 +395,15 @@ html {
   margin-bottom: 35px;
 }
 
-.placing-link {
-  background-image: url(/img/JPG/41.jpg);
-  width: 373px;
-  height: 441px;
+.more-link > * {
+  position: relative;
 }
 
 .more-link {
+  position: relative;
   display: table;
-  width: 100%;
-  height: 100%;
+  width: 373px;
+  height: 441px;
   font-size: 22px;
   line-height: 1.45;
   color: #ffffff;
@@ -414,6 +414,17 @@ html {
   vertical-align: bottom;
   padding-left: 40px;
   padding-bottom: 50px;
+}
+
+.more-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(/img/JPG/41.jpg);
 }
 
 .star {
@@ -442,7 +453,7 @@ html {
 
 .contacts-section-header {
   margin-left: 45px;
-  font-family: MullerBold;
+  font-weight: bold;
   font-size: 22px;
   line-height: 1.45;
   color: #666666;
@@ -520,7 +531,7 @@ html {
   border-radius: 12px;
   background-color: var(--button);
   border: none;
-  font-family: MullerBold;
+  font-weight: bold;
   font-size: 16px;
   line-height: 2;
   text-align: center;
@@ -537,7 +548,7 @@ html {
   justify-content: space-between;
   margin-top: 65px;
   border-radius: 12px;
-  background-color: var(--header)333;
+  background-color: var(--header);
 }
 
 .info {
