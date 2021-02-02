@@ -40,17 +40,23 @@
   box-sizing: border-box;
 }
 
+input:focus, textarea:focus {
+  border-radius: 5px;
+  outline: none;
+  border: .5px solid var(--text);
+}
+
 a {
   text-decoration: none;
-  transition: filter .5s ease;
+  transition: filter .3s ease;
 }
 
 button {
-  transition: filter .5s ease;
+  transition: filter .3s ease;
 }
 
 button:hover {
-  filter: brightness(75%);
+  filter: brightness(90%);
   cursor: pointer;
 }
 
@@ -60,7 +66,7 @@ button:active {
 }
 
 a:hover {
-  filter: brightness(50%);
+  filter: brightness(80%);
 }
 
 ul {
@@ -113,7 +119,12 @@ html {
 }
 
 .logo {
+  background-image: url(/img/PNG/Logo.png);
+  width: 261px;
+  height: 54px;
   margin-right: 25px;
+  padding: 0;
+  border: 0;
 }
 
 .phone {
