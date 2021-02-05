@@ -80,11 +80,13 @@ img {
 }
 
 html {
+  margin: auto;
   font-family: Muller, sans-serif;
   font-weight: normal;
 }
 
 .container {
+  padding: 0;
   width: 1168px;
   margin: auto;
   margin-top: 50px;
@@ -107,10 +109,6 @@ html {
 }
 
 /* Header */
-
-.header {
-  margin-bottom: 70px;
-}
 
 .header-header {
   display: flex;
@@ -152,7 +150,6 @@ html {
 .header-nav {
   display: flex;
   align-items: center;
-  margin-left: 20px;
 }
 
 .header-list {
