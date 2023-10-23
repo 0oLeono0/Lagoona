@@ -117,7 +117,7 @@ html {
 }
 
 .logo {
-  background-image: url("img/PNG/Logo.png");
+  background-image: url("../img/PNG/Logo.png");
   width: 261px;
   height: 54px;
   margin-right: 25px;
@@ -134,7 +134,7 @@ html {
 }
 
 .account-arrow {
-  background-image: url("img/PNG/keyboard_tab.png");
+  background-image: url("../img/PNG/keyboard_tab.png");
   background-size: contain;
   width: 21px;
   height: 12px;
@@ -252,7 +252,7 @@ html {
 .special-offer-img {
   width: 595px;
   height: 540px;
-  background-image: url(img/JPG/22.jpg);
+  background-image: url("../img/JPG/22.jpg");
   display: table-cell;
   vertical-align: bottom;
 }
@@ -413,7 +413,7 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(img/JPG/41.jpg);
+  background: url("../img/JPG/41.jpg");
 }
 
 .star {
@@ -604,23 +604,23 @@ html {
 }
 
 .trip {
-  background-image: url(img/PNG/tripadvisor.png);
+  background-image: url("../img/PNG/tripadvisor.png");
 }
 
 .twiter {
-  background-image: url(img/PNG/twitter.png);
+  background-image: url("../img/PNG/twitter.png");
 }
 
 .facebook {
-  background-image: url(img/PNG/facebook.png);
+  background-image: url("../img/PNG/facebook.png");
 }
 
 .vk {
-  background-image: url(img/PNG/social.png);
+  background-image: url("../img/PNG/social.png");
 }
 
 .google {
-  background-image: url(img/PNG/google-plus-social-logotype.png);
+  background-image: url("../img/PNG/google-plus-social-logotype.png");
 }
 
 .footer-img {
